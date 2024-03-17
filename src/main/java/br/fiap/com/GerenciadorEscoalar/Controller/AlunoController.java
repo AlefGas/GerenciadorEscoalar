@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,10 +37,10 @@ List <Aluno> Repository =  new ArrayList<>();
         return aluno;
     }
 
-    @GetMapping("{rm}")
-    public Aluno AlunoPorRM(@PathVariable Long rm) {
-        System.out.println("Rm é  {}"+ rm);
-    }
+  //  @GetMapping("{rm}")
+   // public Aluno AlunoPorRM(@PathVariable Long rm) {
+   //     System.out.println("Rm é  {}"+ rm);
+   // }
     
     
 
